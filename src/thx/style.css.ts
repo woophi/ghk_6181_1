@@ -11,6 +11,7 @@ const container = style({
 
 const rocket = style({
   marginTop: '9rem',
+  objectFit: 'contain',
 });
 
 export const thxSt = {
