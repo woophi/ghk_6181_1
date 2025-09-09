@@ -66,9 +66,6 @@ export const App = () => {
 
   const { robots } = useRobotsData();
 
-  const min = 500_000;
-  const max = 1_000_000;
-
   useEffect(() => {
     if (!LS.getItem(LSKeys.UserId, null)) {
       LS.setItem(LSKeys.UserId, Date.now());
@@ -113,7 +110,6 @@ export const App = () => {
   };
 
   const handleSwitchToggle = () => {
-    window.gtag('event', 'switch_4597_var4');
     setChecked(prevState => !prevState);
   };
 
