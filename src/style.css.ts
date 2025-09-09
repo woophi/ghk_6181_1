@@ -1,4 +1,4 @@
-import { globalStyle, style } from '@vanilla-extract/css';
+import { style } from '@vanilla-extract/css';
 
 const bottomBtn = style({
   position: 'fixed',
@@ -15,31 +15,19 @@ const container = style({
   gap: '1rem',
 });
 
-const box = style({
+const boxSlide = style({
   display: 'flex',
-  padding: '1rem',
+  padding: '12px 1rem',
   flexDirection: 'column',
   gap: '1rem',
   borderRadius: '1rem',
-  backgroundColor: '#F3F4F5',
-});
-
-const row = style({
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-});
-
-const switchItem = style({});
-
-globalStyle(`${switchItem} > span > span:first-child`, {
-  fontWeight: 500,
+  backgroundColor: '#EEEEFB8C',
+  width: '152px',
+  height: '132px',
 });
 
 export const appSt = {
   bottomBtn,
   container,
-  box,
-  row,
-  switchItem,
+  boxSlide,
 };
