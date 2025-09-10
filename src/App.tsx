@@ -307,7 +307,7 @@ export const App = () => {
                   style={{ display: 'flex', alignItems: 'center', gap: 4 }}
                 >
                   <UsersMIcon width={10} height={10} />
-                  <span style={{ marginTop: '1px' }}>1235 подключили</span>
+                  <span style={{ marginTop: '1px' }}>{selectedRobot.followers} подключили</span>
                 </Typography.Text>
               </Status>
             </div>
@@ -560,7 +560,7 @@ export const App = () => {
             Выберите робота
           </Typography.TitleResponsive>
           <Typography.Text tag="p" defaultMargins={false} style={{ marginTop: '4px' }} view="primary-medium">
-            5 доступно
+            {robots.length} доступно
           </Typography.Text>
         </div>
 
@@ -583,7 +583,7 @@ export const App = () => {
                   style={{ display: 'flex', alignItems: 'center', gap: 4 }}
                 >
                   <UsersMIcon width={10} height={10} />
-                  <span style={{ marginTop: '1px' }}>1235 подключили</span>
+                  <span style={{ marginTop: '1px' }}>{robot.followers} подключили</span>
                 </Typography.Text>
               </Status>
             </div>
